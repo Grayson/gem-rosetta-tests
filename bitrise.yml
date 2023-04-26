@@ -13,6 +13,7 @@ workflows:
         - content: |-
             #!/usr/bin/env bash
             make
+            rbenv local 3.2.2
             make test_gem_install_bundler
             make test_run_bundler
   primary:
