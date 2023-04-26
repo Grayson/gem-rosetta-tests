@@ -13,6 +13,8 @@ workflows:
         - content: |-
             #!/usr/bin/env bash
             make
+            make test_gem_install_bundler
+            make test_run_bundler
   primary:
     after_run:
       - gem_install_bundler
